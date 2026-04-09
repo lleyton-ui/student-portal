@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, onSnapshot, doc } from 'firebase/firestore';
 import { getAuth, signInAnonymously } from 'firebase/auth';
 import { ShieldCheck, User, Calendar, FileText, Loader2, CheckCircle2, XCircle, Clock, ShieldAlert, Zap } from 'lucide-react';
@@ -7,12 +7,13 @@ import { ShieldCheck, User, Calendar, FileText, Loader2, CheckCircle2, XCircle, 
 // === CONFIGURATION ===
 // USE THE EXACT SAME CONFIG AS YOUR DEAN DASHBOARD
 const firebaseConfig = {
-  apiKey: "AIzaSyAJlP3n63NuYGIL4TFR7jokCNe9LW-ylaE",
-  authDomain: "dean-appointment-system-e8b97.firebaseapp.com",
-  projectId: "dean-appointment-system-e8b97",
-  storageBucket: "dean-appointment-system-e8b97.firebasestorage.app",
-  messagingSenderId: "738705674424",
-  appId: "1:738705674424:web:5a4437ffc801ae8c7b244d"
+  apiKey: "AIzaSyBI29DCdZ1NasWe2xUmp4reOeZC90D-soE",
+  authDomain: "studentanddean-93a6a.firebaseapp.com",
+  projectId: "studentanddean-93a6a",
+  storageBucket: "studentanddean-93a6a.firebasestorage.app",
+  messagingSenderId: "954846539416",
+  appId: "1:954846539416:web:d13aa228a12a4b7bb4aaed",
+  measurementId: "G-F6DP80GZVY"
 };
 
 // Initialize Firebase
